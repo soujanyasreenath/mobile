@@ -23,6 +23,6 @@ Start the application with up with
     npm start
 
 
-Open your browser and run the application on http://localhost:3000 
+Open your browser and run the application on http://localhost:3002 
 
 Voila! Your lookbook application will be launched!

@@ -1,0 +1,56 @@
+<article id="men-wear" style="padding-top:5%" data-ng-controller="menworkController">
+  <section id="wrap-men-wear">
+    <div style="width: 296px;margin: auto;">
+      <p class="buttons-wrap pull-left" style="padding:10px;">
+        <a href="#/men-party" class="btn btn-dark col-black" style="width: 114px;">PARTY WEAR &gt;</a>
+      </p>
+      <p class="buttons-wrap pull-left" style="padding:10px;">
+        <a href="#/men-casual" class="btn btn-dark col-black">CASUAL WEAR &gt;</a>
+      </p>
+      <p class="buttons-wrap">
+        <a href="#/home">&lt; back home</a>
+      </p>
+    </div>
+    <hr>
+    <ul style="list-style-type:none;">
+      <li class="col-xs-3" data-ng-repeat="items in menWorkItems">
+        <img ng-src="{{items.image}}" alt="{{items.name}}" border="0" width="236"   vbmkbalt=""/>
+        <div id="cat-buttons-outter" style="position:absolute; top: 48px;left: 96px;">
+          <p class="buttons-wrap">
+            <a href="#" class="btn col-white" ui-turn-on="modal2" title="click here" style="background: #333;">&gt;</a>
+          </p>
+        </div>
+        <p class="text-uppercase">
+          <hr/>
+          {{items.name}}
+          <hr/>
+        </p>
+      </li>
+    </ul>
+
+    <div ui-content-for="modals">
+      <div class="modal modal-overlay" ui-if='modal2' ui-state='modal2'>
+        <div class="modal-dialog">
+          <div class="modal-content text-center">
+            <div class="modal-header">
+              <button class="close" ui-turn-off="modal2">&times;</button>
+              <h4 class="modal-title">We found a similar Full Suit From Jabong</h4>
+            </div>
+            <div class="modal-body">
+              <p>
+                <img src="/images/men/men-jabong-suit.png" alt="Suit"/>
+              </p>
+              <p style="display:inline-block;">
+                <a href="http://www.jabong.com/mr-button-Solid-Blue-Suit-1081623.html?pos=1" target="_blank" class="btn col-white" style="background:#333;">
+                  GET THIS HERE
+                </a>
+                OR
+              </p>
+              <button ui-turn-off="modal2" class="btn btn-dark">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>

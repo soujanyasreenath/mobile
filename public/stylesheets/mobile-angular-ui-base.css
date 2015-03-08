@@ -7494,7 +7494,7 @@ a.panel-heading {
 }
 
 .modal-overlay {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.63);
 }
 
 .modal-overlay .modal-content,
@@ -7854,7 +7854,7 @@ p.home-btn-wrap {
   text-align: center;
 }
 /*-------------landing pages-----------*/
-/*women*/
+/*women & men*/
 #women-landing-buttons, #men-landing-buttons {
   position: absolute;
   top: 126px;
@@ -7863,4 +7863,44 @@ p.home-btn-wrap {
 p.buttons-wrap {
   padding: 10px 0px;
 }
-/*men*/
+#wrap-women-wear .col-xs-3, #wrap-men-wear .col-xs-3{
+  padding: 0px 3%;
+}
+
+/*media queries*/
+@media (max-width: 767px) {
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12 {
+    float: none;
+    width: 100%;
+    padding: 0px !important;
+  }
+  ul, li {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+@media (max-width: 480px) {
+  #women-landing-buttons, #men-landing-buttons {
+    position: absolute;
+    top: 86px;
+    right: 2%;
+  }
+}
+@media (max-width: 320px) {
+  #women-landing-buttons, #men-landing-buttons {
+    position: absolute;
+    top: 38px;
+    right: 0;
+  }
+}

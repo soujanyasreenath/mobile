@@ -21,5 +21,17 @@ angular.module('lookbookApp', ['ngRoute', 'mobile-angular-ui'])
     }).when('/men-work', {
       templateUrl: '/templates/men/work-wear.html',
       reloadOnSearch: false
+    }).when('/women-party', {
+      templateUrl: '/templates/women/work-wear.html',
+      reloadOnSearch: false
+    }).when('/men-party', {
+      templateUrl: '/templates/men/work-wear.html',
+      reloadOnSearch: false
+    }).when('/women-casual', {
+      templateUrl: '/templates/women/work-wear.html',
+      reloadOnSearch: false
+    }).when('/men-casual', {
+      templateUrl: '/templates/men/work-wear.html',
+      reloadOnSearch: false
     });
 });
